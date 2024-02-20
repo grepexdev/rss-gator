@@ -24,3 +24,4 @@ go.work
 # Custom
 .env
 rss-gator
+./rss-gator
