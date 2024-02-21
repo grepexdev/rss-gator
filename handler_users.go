@@ -42,3 +42,7 @@ func (cfg *apiConfig) handlerUsersCreate(w http.ResponseWriter, r *http.Request)
 	fmt.Println("user created")
 	respondWithJSON(w, http.StatusOK, databaseUserToUser(user))
 }
+
+func (apiCfg *apiConfig) handlerUsersRetrieve(w http.ResponseWriter, r *http.Request, user database.User) {
+	respondWithJSON(w, http.StatusOK, databaseUserToUser(user))
+}

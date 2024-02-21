@@ -4,3 +4,8 @@ VALUES ($1, $2, $3, $4, $5, $6)
 RETURNING *
 ;
 
+-- name: RetrieveFeeds :many
+select * 
+from feeds
+;
+
